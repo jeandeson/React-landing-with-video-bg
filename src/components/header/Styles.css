@@ -1,0 +1,58 @@
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 99999;
+}
+
+header .logo {
+  position: relative;
+  display: inline-flex;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.rightSide {
+  display: flex;
+}
+
+.btns {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btns.menuToggle ion-icon{
+  font-size: 3em;
+}
+
+.btns ion-icon {
+  font-size: 1.5em;
+  color: var(--black);
+}
+
+.btns ion-icon:nth-child(2) {
+  display: none;
+}
+
+.btns.active ion-icon:nth-child(2) {
+  display: block;
+}
+
+.btns.active ion-icon:nth-child(1) {
+  display: none;
+}
+
+

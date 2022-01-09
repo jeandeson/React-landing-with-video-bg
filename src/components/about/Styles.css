@@ -1,0 +1,51 @@
+
+.about-container .conteudo {
+  color: #777;
+  background-color: var(--white);
+  text-align: justify;
+  padding: 5vh 5vw;
+}
+
+.about-container .caixa1, .caixa2, .caixa3, .caixa4 {
+  transition: all 5s ease-in-out;
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.about-container p {
+  margin-bottom: 20px;
+}
+
+.about-container h3 {
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*efeito parallax*/
+.about-container .conteudo-titulo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.conteudo-titulo span.titulo {
+  background-color: var(--black);
+  padding: 18px;
+  font-weight: 600;
+  font-size: 4em;
+  letter-spacing: 5px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0 auto;
+}

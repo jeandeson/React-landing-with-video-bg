@@ -1,0 +1,45 @@
+.copyrightText{
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  z-index: 4;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--black);
+}
+.sci{
+  position: absolute;
+  right: 100px;
+  bottom: 30px;
+  z-index: 4;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.sci li a{
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.75em;
+}
+@media(max-width:768px) {
+  header {
+    padding: 20px;
+  }
+
+  .copyrightText  {
+    font-size: 1em;
+    left: 25px;
+    bottom: 10px;
+  }
+
+  .sci {
+    left: 20px;
+    bottom: 30px;
+  }
+  @media (max-width: 768px) {
+    .sci {
+      display: none;
+    }
+  }
+}

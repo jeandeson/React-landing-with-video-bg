@@ -1,0 +1,94 @@
+.formCotainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.formWrapper{
+  max-width: 40vw;
+  min-width: 30vw;
+  height: 80vh;
+  transition: all 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  transform: scaleX(1);
+}
+
+@media (max-width: 1024px) {
+  .formWrapper{
+    max-width: 80vw;
+    min-width: 30vw;
+    height: 100%;
+  }
+  .formCotainer h1,  .formWrapper p{
+    font-size: 3em;
+  }
+  .formWrapper h1,   .formWrapper p{
+    font-size: 3em;
+  }
+}
+@media (max-width: 768px) {
+  .formWrapper{
+    margin-top: 20px;
+    max-width: 100vw;
+    min-width: 30vw;
+    height: 60%;
+  }
+  .formWrapper h1, .formWrapper p{
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  input#firstname{
+    margin-bottom: 16px;
+  }
+  input#lastname{
+    margin-top: 8px;
+  }
+}
+
+.formItemWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0px;
+}
+
+.formItem{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.formItem, h1, .formItem p{
+  margin: 0 5px;
+}
+
+.formItem input{
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid #ccc;
+}
+.formItem label{
+  color: var(--black);
+}
+.formWrapper h1, .formItem p{
+  color: var(--black);
+}
+
+.formItem button {
+  width: 100px;
+  padding: 8px;
+  align-self: flex-end;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.formItem textarea {
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}

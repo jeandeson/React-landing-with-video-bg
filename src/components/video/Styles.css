@@ -1,0 +1,92 @@
+@keyframes titleTransition {
+  from{
+    opacity: 0.25 ;
+  }
+ to{
+   opacity: 1;
+ }
+}
+
+@keyframes maskTransition {
+  0%{
+    opacity: 1;
+  }
+ 50%{
+   opacity: 0.5;
+ }
+ 100%{
+   opacity: 1;
+ }
+}
+
+.main {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  user-select: none;
+  mix-blend-mode: screen;
+  animation: mask 8s infinite ease-in-out;
+}
+
+.dark .mask{
+  filter: invert(1);
+  mix-blend-mode: multiply;
+}
+
+img.mask {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.main h2 {
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  font-size: 16vw;
+  text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+video {
+  animation: 2.5s ease-in-out titleTransition;
+}
+
+.titleTrans{
+  animation: 1s linear titleTransition;
+}
+
+.loading{
+  position: absolute;
+  color: var(--black);
+  height: 100%;
+  width: 100%;
+  background: var(--white);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
